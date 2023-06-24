@@ -1,5 +1,6 @@
 #ifndef MONTY_H
 #define MONTY_H
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <sys/types.h>
@@ -13,27 +14,27 @@
  * @prev:  pointer to the prev element
  * @next:  pointer to the next element
  */
-typedef struct stack_s
+typedef struct stack_t
 {
 	int n;
-	struct stack_s *prev;
-	struct stack_s *next;
+	struct stack_t *prev;
+	struct stack_t *next;
 } stack_t;
 /**
- * struct bus_s - vars
+ * struct bus_t - vars
  * @arg: value
  * @file: pointer to monty file
  * @cont: line cont
  * @lifi: flg change stack
  * Description: carry value through the program
  */
-typedef struct bus_s
+typedef struct bus_t
 {
 	char *arg;
 	FILE *file;
 	char *cont;
 	int lifi;
-}  bus_t;
+} bus_t;
 extern bus_t bus;
 /**
  * struct instruction_s - opcode and its func

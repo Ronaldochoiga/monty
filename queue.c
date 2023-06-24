@@ -1,3 +1,4 @@
+#include "monty.h"
 /**
  * addqueue - adds ndes to the back of the stack
  * @n: new_value achieved

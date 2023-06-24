@@ -1,11 +1,11 @@
 #include "monty.h"
 bus_t bus = {NULL, NULL, NULL, 0};
 /**
-* main - monty code interpreter
-* @argc: number of arguments
-* @argv: monty file location
-* Return: 0 on success
-*/
+ * main - monty code interpreter
+ * @argc: number of arguments
+ * @argv: monty file location
+ * Return: 0 on success
+ */
 int main(int argc, char *argv[])
 {
 	char *cont;
@@ -30,7 +30,7 @@ int main(int argc, char *argv[])
 	while (rline > 0)
 	{
 		cont = NULL;
-		rline = getline (&cont, &sze, file);
+		rline = getline(&cont, &sze, file);
 		bus.cont = cont;
 		counter++;
 		if (rline > 0)
@@ -41,5 +41,5 @@ int main(int argc, char *argv[])
 	}
 	free_stack(stack);
 	fclose(file);
-return (0);
+	return (0);
 }
