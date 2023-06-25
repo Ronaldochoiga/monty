@@ -14,21 +14,21 @@
  * @prev:  pointer to the prev element
  * @next:  pointer to the next element
  */
-typedef struct stack_t
+typedef struct stack_s
 {
 	int n;
-	struct stack_t *prev;
-	struct stack_t *next;
+	struct stack_s *prev;
+	struct stack_s *next;
 } stack_t;
 /**
- * struct bus_t - vars
+ * struct bus_s - vars
  * @arg: value
  * @file: pointer to monty file
  * @cont: line cont
  * @lifi: flg change stack
  * Description: carry value through the program
  */
-typedef struct bus_t
+typedef struct bus_s
 {
 	char *arg;
 	FILE *file;
